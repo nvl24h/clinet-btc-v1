@@ -63,7 +63,7 @@ import {contacts, socials, logo, introduces} from "@/utils";
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mt-md-0 mt-3">
                     <div>
                         <h3 class="text-light">Thông tin</h3>
                         <ul class="list-unstyled">
