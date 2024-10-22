@@ -1,6 +1,10 @@
 <template>
     <swiper
         :breakpoints="{
+            '320': {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
             '640': {
                 slidesPerView: 1,
                 spaceBetween: 20,
@@ -18,64 +22,70 @@
         :slidesPerView="'auto'"
         :spaceBetween="20"
         :navigation="true"
+        :centeredSlides="true"
         :modules="modules"
         class="mySwiper"
     >
         <swiper-slide
-            ><div class="event__item">
+            ><div>
                 <img src="../../public/images/Event01.png" alt="" />
-                <div class="event__box">
-                    <h3 class="heading__sub event__title">Hà Nội | MATTER of TASTE |</h3>
-                    <p class="desc event__time">Thời gian: 18:00, ngày 28/09/2024</p>
-                    <p class="desc event__adsress">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
+                <div class="event__box py-3">
+                    <h3 class="fs-5 fw-bold mb-2">Hà Nội | MATTER of TASTE | new</h3>
+                    <p class="mb-0">Thời gian: 18:00, ngày 28/09/2024 new</p>
+                    <p class="mb-0">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
                 </div>
-            </div></swiper-slide
-        ><swiper-slide
-            ><div class="event__item">
+            </div>
+        </swiper-slide>
+        <swiper-slide
+            ><div>
                 <img src="../../public/images/Event01.png" alt="" />
-                <div class="event__box">
-                    <h3 class="heading__sub event__title">Hà Nội | MATTER of TASTE |</h3>
-                    <p class="desc event__time">Thời gian: 18:00, ngày 28/09/2024</p>
-                    <p class="desc event__adsress">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
+                <div class="event__box py-3">
+                    <h3 class="fs-5 fw-bold mb-2">Hà Nội | MATTER of TASTE |</h3>
+                    <p class="mb-0">Thời gian: 18:00, ngày 28/09/2024</p>
+                    <p class="mb-0">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
                 </div>
-            </div></swiper-slide
-        ><swiper-slide
-            ><div class="event__item">
+            </div>
+        </swiper-slide>
+        <swiper-slide
+            ><div>
                 <img src="../../public/images/Event01.png" alt="" />
-                <div class="event__box">
-                    <h3 class="heading__sub event__title">Hà Nội | MATTER of TASTE |</h3>
-                    <p class="desc event__time">Thời gian: 18:00, ngày 28/09/2024</p>
-                    <p class="desc event__adsress">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
+                <div class="event__box py-3">
+                    <h3 class="fs-5 fw-bold mb-2">Hà Nội | MATTER of TASTE |</h3>
+                    <p class="mb-0">Thời gian: 18:00, ngày 28/09/2024</p>
+                    <p class="mb-0">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
                 </div>
-            </div></swiper-slide
-        ><swiper-slide
-            ><div class="event__item">
+            </div>
+        </swiper-slide>
+        <swiper-slide
+            ><div>
                 <img src="../../public/images/Event01.png" alt="" />
-                <div class="event__box">
-                    <h3 class="heading__sub event__title">Hà Nội | MATTER of TASTE |</h3>
-                    <p class="desc event__time">Thời gian: 18:00, ngày 28/09/2024</p>
-                    <p class="desc event__adsress">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
+                <div class="event__box py-3">
+                    <h3 class="fs-5 fw-bold mb-2">Hà Nội | MATTER of TASTE |</h3>
+                    <p class="mb-0">Thời gian: 18:00, ngày 28/09/2024</p>
+                    <p class="mb-0">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
                 </div>
-            </div></swiper-slide
-        ><swiper-slide
-            ><div class="event__item">
+            </div>
+        </swiper-slide>
+        <swiper-slide
+            ><div>
                 <img src="../../public/images/Event01.png" alt="" />
-                <div class="event__box">
-                    <h3 class="heading__sub event__title">Hà Nội | MATTER of TASTE |</h3>
-                    <p class="desc event__time">Thời gian: 18:00, ngày 28/09/2024</p>
-                    <p class="desc event__adsress">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
+                <div class="event__box py-3">
+                    <h3 class="fs-5 fw-bold mb-2">Hà Nội | MATTER of TASTE |</h3>
+                    <p class="mb-0">Thời gian: 18:00, ngày 28/09/2024</p>
+                    <p class="mb-0">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
                 </div>
-            </div></swiper-slide
-        ><swiper-slide
-            ><div class="event__item">
+            </div>
+        </swiper-slide>
+        <swiper-slide
+            ><div>
                 <img src="../../public/images/Event01.png" alt="" />
-                <div class="event__box">
-                    <h3 class="heading__sub event__title">Hà Nội | MATTER of TASTE |</h3>
-                    <p class="desc event__time">Thời gian: 18:00, ngày 28/09/2024</p>
-                    <p class="desc event__adsress">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
+                <div class="event__box py-3">
+                    <h3 class="fs-5 fw-bold mb-2">Hà Nội | MATTER of TASTE |</h3>
+                    <p class="mb-0">Thời gian: 18:00, ngày 28/09/2024</p>
+                    <p class="mb-0">Địa điểm: Phòng Grand Cru – Bottle Bunker, Tầng 1 LOTTE Mall West Lake, Tây Hồ, Hà Nội</p>
                 </div>
-            </div></swiper-slide
-        >
+            </div>
+        </swiper-slide>
     </swiper>
 </template>
 <script>
@@ -87,7 +97,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import {Navigation} from "swiper/modules";
+import {Navigation, Pagination} from "swiper/modules";
 
 export default {
     components: {
@@ -123,12 +133,25 @@ export default {
     object-fit: cover;
 }
 
-.swiper-slide-active + .swiper-slide {
+.swiper-slide-active {
     opacity: 1;
     transition: all 0.5s ease-in-out;
+    display: block;
 }
 
-.swiper-slide-active + .swiper-slide .event__box {
+.swiper-slide .event__box {
+    display: none;
+}
+
+.swiper-slide-active .event__box {
+    display: block;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+/* ///////////// */
+.event__box {
     max-width: 80%;
     margin: 0 auto;
     text-align: start;
@@ -140,10 +163,5 @@ export default {
     position: relative;
     display: block;
     transition: all 0.5s ease-in-out;
-}
-
-/* ///////////// */
-.event__box {
-    display: none;
 }
 </style>

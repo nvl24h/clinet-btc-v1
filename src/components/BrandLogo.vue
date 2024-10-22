@@ -5,6 +5,10 @@
         :loop="true"
         :navigation="true"
         :breakpoints="{
+            '320': {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
             '640': {
                 slidesPerView: 2,
                 spaceBetween: 20,
@@ -19,7 +23,7 @@
             },
         }"
         :modules="modules"
-        class="mySwiper"
+        class="mySwiper brandlogo-slider"
     >
         <swiper-slide><img class="partner__image" src="../../public/images/viettinbank.png" alt="" /> </swiper-slide>
         <swiper-slide><img class="partner__image" src="../../public/images/vietnamendline.png" alt="" /> </swiper-slide>
