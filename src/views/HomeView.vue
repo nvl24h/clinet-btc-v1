@@ -1,6 +1,8 @@
 <script setup>
 import Banner from "@/components/Banner.vue";
 import ProductSlider from "@/components/ProductSlider.vue";
+import BrandLogo from "@/components/BrandLogo.vue";
+import EventSlider from "@/components/EventSlider.vue";
 </script>
 
 <template>
@@ -150,6 +152,55 @@ import ProductSlider from "@/components/ProductSlider.vue";
                     <div class="products__list">
                         <ProductSlider />
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="bg-body-tertiary py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Dịch Vụ Khách Hàng</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="text-center bg-white p-5">
+                            <img class="mb-2" src="../../public/icons/service01.png" alt="" />
+                            <h3 class="mb-2">Doanh Nghiệp</h3>
+                            <p class="w-75 mx-auto">Tư vấn quà tặng cho khách hàng danh nghiệp</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="text-center bg-white p-5">
+                            <img class="mb-2" src="../../public/icons/box.png" alt="" />
+                            <h3 class="mb-2">Tư Vấn Quà Tặng</h3>
+                            <p class="w-75 mx-auto">Tư vấn quà tặng cho khách hàng cá nhân & danh nghiệp</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="text-center bg-white p-5">
+                            <img class="mb-2" src="../../public/icons/techer.png" alt="" />
+                            <h3 class="mb-2">Đào Tạo</h3>
+                            <p class="w-75 mx-auto">Đào tạo sản phẩm cho khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brand logo -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="mb-5">Đối Tác Của Chúng Tôi</h3>
+                    <div class="">
+                        <BrandLogo />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Event -->
+        <section class="py-5">
+            <div class="text-center">
+                <h3 class="mb-5">Sử kiện</h3>
+                <div class="">
+                    <EventSlider />
                 </div>
             </div>
         </section>
