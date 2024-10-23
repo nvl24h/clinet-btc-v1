@@ -35,13 +35,13 @@ import {contacts, socials, logo, introduces} from "@/utils";
         </div>
     </section>
 
-    <footer class="py-5" style="background-color: #01182e">
+    <footer class="py-5 bg-secondary-btc">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-secondary">
                     <div>
                         <img :src="logo.footer" :alt="logo.alt" style="max-height: 60px; width: auto" />
-                        <p class="mt-3 w-50 fs-6" style="text-align: justify">
+                        <p class="mt-3 fs-6 footer-info" style="text-align: justify">
                             Betty’s choice là tập hợp những sản phẩm chất lượng cao của nước Úc, những sản phẩm đã được lựa chọn kỹ càng để phù hợp
                             nhất với dinh dưỡng, khẩu vị và thói quen của người Việt.
                         </p>
@@ -135,5 +135,9 @@ import {contacts, socials, logo, introduces} from "@/utils";
 
 .footer-contact-box svg {
     color: #48c7f0 !important;
+}
+
+.footer-info {
+    max-width: 350px;
 }
 </style>

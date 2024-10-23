@@ -3,13 +3,15 @@ import Banner from "@/components/Banner.vue";
 import ProductSlider from "@/components/ProductSlider.vue";
 import BrandLogo from "@/components/BrandLogo.vue";
 import EventSlider from "@/components/EventSlider.vue";
+import WarehouseSystem from "@/components/WarehouseSystem.vue";
+import BlogSlider from "@/components/BlogSlider.vue";
 </script>
 
 <template>
     <main>
         <Banner />
         <!-- Hero -->
-        <section class="overflow-hidden" style="background-color: #01182e">
+        <section class="overflow-hidden bg-secondary-btc">
             <div class="container">
                 <div class="text-center position-relative py-3 text-white">
                     <img class="position-absolute top-0 start-0" src="../../public/images/Background hero.png" alt="" />
@@ -204,6 +206,16 @@ import EventSlider from "@/components/EventSlider.vue";
                 </div>
             </div>
         </section>
+        <!-- Blog -->
+        <section class="py-5">
+            <div class="container">
+                <BlogSlider />
+            </div>
+        </section>
+        <!-- Warehouses -->
+        <section class="py-5 warehouses">
+            <WarehouseSystem />
+        </section>
     </main>
 </template>
 
@@ -253,5 +265,14 @@ import EventSlider from "@/components/EventSlider.vue";
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.warehouses {
+    padding: 50px 0;
+    background-image: url("../../public/images/sunlit-vineyard-bliss.png");
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 </style>
