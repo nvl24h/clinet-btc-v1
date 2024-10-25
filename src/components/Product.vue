@@ -1,3 +1,27 @@
+<script setup>
+import {useProductStore} from "@/stores/product";
+import {computed, onMounted} from "vue";
+
+// Tạo một instance của productStore
+const productStore = useProductStore();
+
+// Sử dụng computed để lấy danh sách sản phẩm từ store
+const products = computed(() => productStore.products);
+
+// Lấy danh sách sản phẩm từ API khi component được mounted
+const getDataProduct = async () => {
+    await productStore.getAllProduct(); // Gọi trực tiếp action để lấy dữ liệu từ API
+};
+
+// Khi component được mounted, gọi action để lấy dữ liệu
+onMounted(() => {
+    console.log(11111111111111);
+
+    getDataProduct();
+    console.log(products.value); // Kiểm tra danh sách sản phẩm sau khi lấy dữ liệu
+});
+</script>
+
 <template>
     <section class="product py-5">
         <div class="container">
@@ -174,8 +198,6 @@
         </div>
     </section>
 </template>
-
-<script></script>
 
 <style scoped>
 .product-slider:hover::after {
