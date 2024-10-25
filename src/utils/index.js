@@ -3,13 +3,13 @@
 const contacts = [
     {
         type: "Hotline",
-        icon: "../../public/icons/call-icon.png",
+        icon: "/icons/call-icon.png",
         label: "Hotline",
         value: "0966 999 591",
     },
     {
         type: "Email",
-        icon: "../../public/icons/email-icon.png",
+        icon: "/icons/email-icon.png",
         label: "Email",
         value: "info@bettychoice.au",
     },
@@ -90,8 +90,8 @@ const banners = [
 
 const logo = {
     type: "logo",
-    header: "../../public/icons/Logo.png",
-    footer: "../../public/icons/logo-white.png",
+    header: "/icons/Logo.png",
+    footer: "/icons/logo-white.png",
     alt: "Bettychoice",
 };
 
