@@ -8,7 +8,7 @@ import {contacts, socials, logo, introduces} from "@/utils";
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6">
                     <div class="d-flex align-items-center gap-3 text-light">
-                        <img src="../../public/icons/action_footer.png" alt="" max-height="86px" width="auto" />
+                        <img src="/icons/action_footer.png" alt="" max-height="86px" width="auto" />
                         <div>
                             <h3 class="fs-4 fw-normal">Đăng ký nhận ưu đãi</h3>
                             <p class="mb-0">Điền thông tin của bạn để được tư vấn ưu đãi miễn phí</p>

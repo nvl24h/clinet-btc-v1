@@ -11,7 +11,7 @@ import {socials} from "@/utils";
 
     <!-- Product Banner -->
     <section class="product__banner">
-        <img class="product__banner-img" src="../../public/images/productHero.jpg" alt="" />
+        <img class="product__banner-img" src="/images/productHero.jpg" alt="" />
     </section>
 
     <!-- Product Breadcrumb -->
@@ -67,56 +67,56 @@ import {socials} from "@/utils";
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Giống nho: <br /><span class="text-primary-btc">Shiraz</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Dung tích: <br /><span class="text-primary-btc">750ml</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Vùng: <br /><span class="text-primary-btc">Đông Nam Úc</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Niên vụ: <br /><span class="text-primary-btc">2018</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Nồng độ: <br /><span class="text-primary-btc">15%</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Quốc gia: <br /><span class="text-primary-btc">Úc</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Thương hiệu: <br /><span class="text-primary-btc">Shiraz</span></p>
                                 </div>
                             </div>
                             <!-- Item 1 -->
                             <div class="col-6">
                                 <div class="d-flex w-100 d-flex w-100 align-items-center gap-2">
-                                    <img class="object-fit-cover" height="100%" src="../../public/icons/grape.png" alt="grape" />
+                                    <img class="object-fit-cover" height="100%" src="/icons/grape.png" alt="grape" />
                                     <p class="mb-0">Nhiệt độ bảo quản: <br /><span class="text-primary-btc">15°C - 18°C</span></p>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ import {socials} from "@/utils";
                             ><i class="fa-solid fa-file-arrow-down"></i> Download catalogue</a
                         >
                         <div class="border mt-3 p-3 rounded border-info d-flex gap-2">
-                            <img class="object-fit-cover" src="../../public/icons/call-icon.png" alt="Hỗ trở mua hàng" height="20px" />
+                            <img class="object-fit-cover" src="/icons/call-icon.png" alt="Hỗ trở mua hàng" height="20px" />
                             <div class="">
                                 <p class="mb-1">Hỗ trợ mua hàng</p>
                                 <!-- <h3 class="mt-0">0966 999 591 <br />0909 395885</h3> -->

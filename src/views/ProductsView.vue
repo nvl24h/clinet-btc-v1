@@ -10,7 +10,7 @@ import FeaturesDatail from "@/components/FeaturesDatail.vue";
 
     <!-- Product Banner -->
     <section class="product__banner">
-        <img class="product__banner-img" src="../../public/images/productHero.jpg" alt="" />
+        <img class="product__banner-img" src="/images/productHero.jpg" alt="" />
     </section>
 
     <!-- Product Breadcrumb -->
