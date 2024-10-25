@@ -2,46 +2,65 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bettychoice Việt Nam</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bettychoice Việt Nam</title>
 
-  <style>
-    .bg-primary-btc {
-      background-color: #48c7f0 !important;
-    }
+    <style>
+        .bg-primary-btc {
+            background-color: #48c7f0 !important;
+        }
 
-    .bg-secondary-btc {
-      background-color: #01182e;
-    }
+        .bg-secondary-btc {
+            background-color: #01182e;
+        }
 
-    .text-primary-btc {
-      color: #48c7f0 !important;
-    }
+        .text-primary-btc {
+            color: #48c7f0 !important;
+        }
 
-    .border-primary-btc {
-      border-color: #48c7f0 !important;
-    }
+        .border-primary-btc {
+            border-color: #48c7f0 !important;
+        }
 
-    .primary-btc-hover:hover {
-      color: #48c7f0 !important;
-    }
+        .primary-btc-hover:hover {
+            color: #48c7f0 !important;
+        }
 
-    * {
-      user-select: none !important;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-    }
-  </style>
+        * {
+            user-select: none !important;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
 </head>
 
 <body>
-  <div id="app"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
-    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="/src/main.js"></script>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+        function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+        }
+
+        document.onkeydown = (e) => {
+            // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+            if (
+                event.keyCode === 123 ||
+                ctrlShiftKey(e, 'I') ||
+                ctrlShiftKey(e, 'J') ||
+                ctrlShiftKey(e, 'C') ||
+                (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+            )
+                return false;
+        };
+    </script>
 </body>
 
 </html>
