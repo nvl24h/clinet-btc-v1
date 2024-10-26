@@ -2,193 +2,39 @@
 import {useProductStore} from "@/stores/product";
 import {computed, onMounted} from "vue";
 
-// Tạo một instance của productStore
 const productStore = useProductStore();
 
-// Sử dụng computed để lấy danh sách sản phẩm từ store
-const products = computed(() => productStore.products);
+// Sử dụng computed để lấy danh sách sản phẩm
+const productList = computed(() => productStore.products);
 
-// Lấy danh sách sản phẩm từ API khi component được mounted
 const getDataProduct = async () => {
-    await productStore.getAllProduct(); // Gọi trực tiếp action để lấy dữ liệu từ API
+    await productStore.getAllProduct();
 };
 
-// Khi component được mounted, gọi action để lấy dữ liệu
 onMounted(() => {
-    console.log(11111111111111);
-
     getDataProduct();
-    console.log(products.value); // Kiểm tra danh sách sản phẩm sau khi lấy dữ liệu
 });
 </script>
-
 <template>
     <section class="product py-5">
         <div class="container">
             <div class="row g-2 g-md-4">
-                <div class="col-lg-3 col-md-4 col-6">
+                <div class="col-lg-3 col-md-4 col-6" v-for="product in productList" :key="product.id">
                     <div class="card rounded-4 product-slider position-relative">
                         <div class="overflow-hidden position-relative" style="height: 270px">
                             <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
+                                :src="product.product_thumb"
                                 class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
                                 alt="..."
                                 style="height: 100%; width: auto"
                             />
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
+                            <h5 class="card-title small product-title">{{ product.product_name }}</h5>
+                            <p class="fw-bold fs-2 text-primary-btc">{{ product.product_price }}<span class="fs-6">000</span></p>
                             <a
                                 class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
-                                ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="card rounded-4 product-slider position-relative">
-                        <div class="overflow-hidden position-relative" style="height: 270px">
-                            <img
-                                src="https://product.hstatic.net/200000511439/product/heart_of_the_murray_do_rose_d638e5ebacc74d548941948f5edab72d_large.jpg"
-                                class="card-img-top pt-4 position-absolute top-50 start-50 translate-middle"
-                                alt="..."
-                                style="height: 100%; width: auto"
-                            />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title small product-title">Vang đỏ Pháp Château Fontaubert Bordeaux 2021</h5>
-                            <p class="fw-bold fs-2 text-primary-btc">650,<span class="fs-6">000</span></p>
-                            <a
-                                class="product__link position-absolute top-50 start-50 translate-middle text-white z-3 justify-content-center align-items-center d-none"
-                                href="#"
+                                :href="product.product_link"
                                 ><i class="fa-solid fa-arrow-right" style="color: currentColor"></i
                             ></a>
                         </div>

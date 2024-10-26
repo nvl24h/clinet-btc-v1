@@ -1,5 +1,9 @@
 <script setup>
+import {ref} from "vue"; // Import ref để tạo biến phản ứng
 import {contacts, socials, logo, categories} from "@/utils";
+
+// Khai báo searchResults với ref
+const searchResults = ref([]); // Khởi tạo searchResults là một mảng rỗng
 </script>
 
 <template>
@@ -82,11 +86,7 @@ import {contacts, socials, logo, categories} from "@/utils";
                     <li class="nav-item text-lg-center" v-for="category in categories" :key="category.name">
                         <router-link
                             :to="`/collections/${category.path}`"
-                            @click="menuClick"
-                            :class="[
-                                'nav-link fw-bold fs-6 text-uppercase px-3 primary-btc-hover position-relative',
-                                {active: activeCategory === category.path},
-                            ]"
+                            :class="['nav-link fw-bold fs-6 text-uppercase px-3 primary-btc-hover position-relative']"
                         >
                             {{ category.name }}
                         </router-link>
